@@ -1,0 +1,155 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>2659 RoboWarriors</title>
+    <meta name="description" content="FIRST FRC team 2659 RoboWarriors, Bishop Alemany High School robotics team">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/mainlogo.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Russo One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+            $("#insert1").load("navbar.html");
+        });
+        $(function(){
+            $("#insert2").load("subnavbar.html");
+        });
+        $(function(){
+            $("#insert3").load("footer.html");
+        });
+    </script>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 990px)">
+    <style>
+        .his_top {
+            width: 100%;
+            display: inline-block;
+        }
+        .his_top_ri {
+            width: 100%;
+            margin-left: -20px;
+        }
+        .his_top_ri ul li:hover {
+            background: #770B2D;
+            color: #E0CC5F;
+        }
+        .his_top_ri ul li {
+            list-style-type: none;
+            float: left;
+            width: 50%;
+            text-align: center;
+            background: #eaeaea;
+            height: 50px;
+            line-height: 50px;
+            border-left: 1px solid #fff;
+            font-size: 18px;
+            color: #666;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all .5s linear;
+            -webkit-transition: all .5s linear;
+            -moz-transition: all .5s linear;
+            -ms-transition: all .5s linear;
+            -o-transition: all .5s linear;
+        }
+        .his_top_ri .choose {
+            background: #E0CC5F;
+            color: #ffffff;
+        }
+        .his_cont {
+            display: none;
+            opacity: 0;
+            transition: all .5s linear;
+            -webkit-transition: all .5s linear;
+            -moz-transition: all .5s linear;
+            -ms-transition: all .5s linear;
+            -o-transition: all .5s linear;
+        }
+        .his_cont {
+            margin-top: 10px;
+        }
+    </style>
+
+
+</head>
+<body>
+
+
+<div class="all">
+
+    <div id="insert1" class="top"></div>
+    <div id="insert2"></div>
+    <div>
+        <img src="img/games.jpg" style="width: 100%; height: 30%; margin-top: 2.5px; position: relative; z-index: -1;">
+    </div>
+    <div class="default-bg container-fluid">
+        <h2>Past Games and Our Robots</h2>
+            <div class="history">
+                <div class="his_top">
+                    <div class="his_top_ri">
+                        <ul>
+                            <li>2016</li>
+                            <li class="choose">2017</li>
+                        </ul>
+                </div>
+                </div>
+                <div class="his_wz">
+                    <div class="his_cont">
+                        <h2>2016 STRONGHOLD</h2>
+                        <div class="col-md-6" style="margin-top: 10px">
+                            <img src="img/2016robot1.jpg" width="100%">
+                        </div>
+                        <div class="col-md-6" style="margin-top: 10px">
+                            <img src="img/2016robot2.jpg" width="100%">
+                        </div>
+                        <img src="img/2016robot3.jpg" width="96%" style="margin-top: 15px; margin-left: 2%">
+                    </div>
+                    <div class="his_cont" style="display: block;opacity: 1;">
+                        <h2>2017 STEAMWORKS</h2>
+                        <div class="col-sm-6">
+                            <h3>Unite Your Crew.
+                                Ready Your Contraption.
+                                Prepare to take flight!</h3>
+                            <p class="text">FIRST® STEAMWORKS the 2017 FIRST Robotics Competition game, invites two adventure clubs from an era in which technology relied on steam power to prepare their airships for the ultimate long distance race.</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="img/steamworkslogo.jpg" width="80%" style="margin-left: 10%;">
+                        </div>
+                        <div class="col-md-6" style="margin-top: 20px;">
+                            <img src="img/2017robot.jpg" width="90%">
+                        </div>
+                        <div class="col-md-6 text-center" style="margin-top: 30px;">
+                            <h3>Our Robot IronWarrior!</h3>
+                            <p class="text">"Our IronWarrior this year focused on picking up and shooting fuel into the high goal, climbing up the rope,  and placing gears. Only tank drive can control this beast. The overall design of our robot was bulky and 'boxy' to plow our way to victory each match."</p>
+                        </div>
+                        <iframe src="https://www.youtube.com/embed/EMiNmJW7enI" frameborder="0" width="96.2%" height="300px" style="margin-left:1.9%; margin-top: 20px;"></iframe>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+<footer>
+    <div id="insert3" class="social"></div>
+</footer>
+
+<script>
+        var now;
+        $(".his_top_ri" ).find('li').click(function(){
+            now = $(this ).index();
+            $(this ).addClass('choose');
+            $(this ).siblings('li' ).removeClass('choose');
+            $(".his_wz" ).find('.his_cont' ).eq(now ).css('display','block');
+            $(".his_wz" ).find('.his_cont' ).eq(now ).siblings('.his_cont' ).css('display','none');
+            $(".his_wz" ).find('.his_cont' ).eq(now ).animate({ "opacity": "1" }, 500 );
+            $(".his_wz" ).find('.his_cont' ).eq(now ).siblings('.his_cont' ).animate({ "opacity": "0" }, 500 );
+        })
+</script>
+
+</body>
+</html>

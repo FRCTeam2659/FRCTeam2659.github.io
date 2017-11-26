@@ -1,0 +1,83 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>2659 RoboWarriors</title>
+    <meta name="description" content="BAHS 2659 RoboWarriors">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/mainlogo.png">
+    <link href="http://ampc.me/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Russo One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <style>
+        .bg-2 {
+            background-image: url("img/wholeteam.jpg");
+            padding: 10% 20%;
+            background-repeat: repeat-y;
+            background-size: 100%;
+        }
+        .slack {
+            background-color: #770B2D;
+        }
+    </style>
+
+</head>
+<body>
+
+<div w3-include-html="navbar.html"></div>
+<script>
+    w3.includeHTML();
+</script>
+
+<script>
+    $(document).ready(function() {
+        function setHeight() {
+            windowWidth = $(window).innerWidth();
+            $('.slack').css('height', windowWidth/2.6);
+        };
+        setHeight();
+
+        $(window).resize(function() {
+            setHeight();
+        });
+    });
+</script>
+<script type="text/javascript">
+    window._chatlio = window._chatlio||[];
+    !function(){ var t=document.getElementById("chatlio-widget-embed");if(t&&window.ChatlioReact&&_chatlio.init)return void _chatlio.init(t,ChatlioReact);for(var e=function(t){return function(){_chatlio.push([t].concat(arguments)) }},i=["configure","identify","track","show","hide","isShown","isOnline"],a=0;a<i.length;a++)_chatlio[i[a]]||(_chatlio[i[a]]=e(i[a]));var n=document.createElement("script"),c=document.getElementsByTagName("script")[0];n.id="chatlio-widget-embed",n.src="https://w.chatlio.com/w.chatlio-widget.js",n.async=!0,n.setAttribute("data-embed-version","2.1");
+        n.setAttribute('data-widget-options', '{"embedInline": true}');
+        n.setAttribute('data-widget-id','564e87c2-6d81-494b-4ab7-6c06b9e2cebc');
+        c.parentNode.insertBefore(n,c);
+    }();
+</script>
+
+
+<div class="bg-2 container-fluid text-center">
+
+    <div class="col-sm-12">
+        <h2>BOND TO US</h2>
+        <div id="chatlioWidgetPlaceholder" style="opacity: 0.92;" class="slack"></div>
+    </div>
+    <!-- Add this div in your DOM where you want the inline div to be inserted by Chatlio, change height/width to fit your needs -->
+
+
+
+</div>
+
+
+
+<div w3-include-html="footer.html"></div>
+<script>
+    w3.includeHTML();
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+.hidden-xs {
+    display: none;
+}
+.hidden-md {
+    display: block;
+}
+.all {
+    width: 100%;
+}
+
+.text {
+    font-size: 15px;
+}
+.top {
+    height:70px;
+}
+.quicklink {
+    display:none;
+}
+.nav li {
+    display: inline-block;
+    padding: 0;
+    margin-top: 3.85px;
+}
+.links {
+    font-size: 14px;
+    padding: 1px 10px;
+}
+.navigation-down {
+    width: 100%;
+}
+.navigation-down-inner {
+    text-align: center;
+}
+.navigation-down-inner hr {
+    margin-bottom: 6px;
+}
+
+.navigation-down-inner b {
+    font-size: 14px;
+}
+.navigation-down-inner p {
+   display: none;
+}
+.nav_list {
+    padding: 0;
+    height: 50px;
+}
+.nav_list_right {
+    width: 100%;
+    text-align: left;
+    float: left;
+}
+.nav_list_right li {
+    line-height: 50px;
+    margin-left: -12px;
+    margin-right: 12px;
+}
+.nav_list_right li a {
+    font-size: 14px;
+    padding: 15px 15px 15px 0px;
+}
+.container-fluid{
+    padding: 10px;
+    padding-bottom: 25px;
+}
+#logo {
+    margin-left: 10px;
+    width: 75px;
+}
+#title {
+    font-size: 20px;
+    text-align: right;
+    margin: 0;
+    margin-right: 5px;
+}
+#subtitle {
+    text-align: right;
+    font-size: 15px;
+    margin: 0;
+    margin-right: 5px;
+}
+#six {
+    text-align: center;
+}
+#six .right {
+    text-align: center;
+}
+h1 {
+    font-size: 20px;
+}
+h3 {
+    font-size: 18px;
+}
+h2{
+    font-size: 20px;
+}
+h4 {
+    font-size: 20px;
+}
+big{
+    font-size: 30px;
+}
+.button{
+    padding: 10px 15px;
+    font-size: 15px;
+}
+footer {
+    height: 330px;
+}
+footer .left{
+    text-align: center
+}
+footer .right {
+    text-align: center
+}
+footer img {
+    width: 50px;
+}
+footer .col-md-5 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.social {
+    width:100%;
+    text-align: center;
+    padding: 30px 0px;
+}
+footer h4 a:active {
+    color: #770B2D;
+}
+.thumbnail img {
+    height: 160px;
+}
