@@ -91,9 +91,9 @@ body {
 .navi li {
     display: inline-block;
     padding: 0;
-    margin-top: 3.3px;
-    margin-bottom: -0.3px;
-    margin-left: -3.5px;
+    margin-top: 4px;
+    margin-left: -4px;
+    margin-bottom: -1px;
 }
 .links {
     font-size: 16px;
